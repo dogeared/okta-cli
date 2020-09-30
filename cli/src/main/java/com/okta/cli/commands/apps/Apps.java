@@ -26,7 +26,8 @@ import java.util.concurrent.Callable;
          description = "Manage Okta apps",
          subcommands = {
                     AppsConfig.class,
-                    AppsCreate.class})
+                    AppsCreate.class,
+                    AppsDelete.class})
 public class Apps implements Callable<Integer> {
 
     @CommandLine.Mixin
